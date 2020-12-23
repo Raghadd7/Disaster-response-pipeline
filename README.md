@@ -34,7 +34,7 @@ To execute the app:
 3. Go to http://0.0.0.0:3001/
 
 
-project link ()
+
 
 ## Project Description<a name='project'></a>
 
@@ -68,11 +68,11 @@ There are 3 folders in this repository, structered as follows:
 The outcome of this project is a web app that analyze message data for disaster response & dispalys a data visualization of the disaster data as shown in the following screen shots:
 <br>
 <p align="center">
-  <img width="540" height="420" src="https://github.com/Raghadd7/Disaster-response-pipeline/blob/main/web%20app%20screen%20shot1.png">
+  <img width="540" height="420" src="https://github.com/Raghadd7/Disaster-response-pipeline/blob/master/web%20app%20screen%20shot1.png">
 </p>
 
 <p align="center">
-    <img width="570" height="350" src="https://github.com/Raghadd7/Disaster-response-pipeline/blob/main/web%20app%20screen%20shot2.png">
+    <img width="570" height="350" src="https://github.com/Raghadd7/Disaster-response-pipeline/blob/master/web%20app%20screen%20shot2.png">
 </p>
 
 <br><br>
@@ -82,7 +82,7 @@ The web app also enables the user to enter a disaster message and then display t
 <br><br>
 
 <p align="center">
-    <img width="540" height="450" src="https://github.com/Raghadd7/Disaster-response-pipeline/blob/main/web%20app%20screen%20shot3.png">
+    <img width="540" height="450" src="https://github.com/Raghadd7/Disaster-response-pipeline/blob/master/web%20app%20screen%20shot3.png">
 </p>
 
 ## Licensing and Acknowledgements<a name="licensing"></a>
