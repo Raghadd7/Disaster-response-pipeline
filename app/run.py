@@ -5,7 +5,6 @@ import pandas as pd
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
-from nltk.stem.porter import PorterStemmer
 
 from flask import Flask
 from flask import render_template, request, jsonify
@@ -24,24 +23,22 @@ def tokenize(text):
     text: the text to be tokenized
     
     Return:
-    clean_tokens: the cleaned & tokenized text 
+    tokens: the tokenized text 
     
     """
     
-    tokens = word_tokenize(text)
+    # remove special characters and lowercase
+    text = re.sub(r"[^a-zA-Z0-9]", " ", text.lower())  
+
+    # tokenize
+    tokens = word_tokenize(text)  
+
+    # lemmatize, remove stopwords   
     stop_words = stopwords.words("english")
     lemmatizer = WordNetLemmatizer()
-
-    clean_tokens = []
-
-    # lemmatinzing, normalizing and stemming tokens if they conain alphabet letter and are not in stop_words
-    for tok in tokens:
-        if (tok not in stop_words) & (tok.isalpha()):
-                clean_tok = lemmatizer.lemmatize(tok).lower().strip()
-                clean_tok = PorterStemmer().stem(tok) 
-                clean_tokens.append(clean_tok)
+    tokens = [lemmatizer.lemmatize(word) for word in tokens if word not in stop_words]
     
-    return clean_tokens
+    return tokens
 
 # load data
 engine = create_engine('sqlite:///../data/DisasterResponse.db')
