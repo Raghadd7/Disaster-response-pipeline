@@ -87,6 +87,6 @@ The web app also enables the user to enter a disaster message and then display t
 
 ## Licensing and Acknowledgements<a name="licensing"></a>
 
-The contents of this repository are covered under the [MIT License.](https://github.com/Raghadd7/Disaster-response-pipeline/blob/main/LICENSE)
+The contents of this repository are covered under the [MIT License.](https://github.com/Raghadd7/Disaster-response-pipeline/blob/master/LICENSE)
 
 This project is part of the Udacity Data Scientist Nanodegree program and the disaster data is provided by [Figure Eight (appen).](https://appen.com)
