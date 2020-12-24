@@ -58,7 +58,7 @@ def clean_data(df):
     df = pd.concat([df, categories], axis=1, sort=False)
     
     # drop rows with value 2 in 'related' category 
-    df = df.drop(df.loc[df['related']==2].index, inplace=True)
+    df = df.drop(df.loc[df['related']==2].index)
     
     # remove duplicates
     df = df.drop_duplicates()
